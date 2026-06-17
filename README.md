@@ -7,7 +7,7 @@ multi-agent loop that forces radical reconceptualization rather than incremental
 
 ```bash
 # Add this repo as a Claude Code plugin marketplace
-claude plugin add marketplace github:YOUR_USERNAME/Iterative-Contextual-Refinements --subfolder claude-plugin
+claude plugin add marketplace https://github.com/efwfe/iterative-refine
 
 # Then install the skill
 claude plugin install iterative-refine
