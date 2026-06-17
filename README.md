@@ -3,29 +3,36 @@
 A Claude Code skill that runs **Iterative Contextual Refinement**: a self-terminating
 multi-agent loop that forces radical reconceptualization rather than incremental polishing.
 
-## Install
+## One-click Install
 
 ```bash
 # Add this repo as a Claude Code plugin marketplace
-claude plugin add marketplace https://github.com/efwfe/iterative-refine
+claude plugin add marketplace github.com/efwfe/iterative-refine
 
-# Then install the skill
+# Install the skill
 claude plugin install iterative-refine
 ```
 
-Or manually copy:
+Then type `/iterative-refine` inside Claude Code and describe your problem.
+
+### Install from a local path
+
 ```bash
-cp -r claude-plugin/skills/iterative-refine ~/.claude/skills/
+claude plugin marketplace add /path/to/this/repo
+claude plugin install iterative-refine
+```
+
+### Manual install (no CLI needed)
+
+```bash
+# Copy the skill directory into your Claude Code skills folder
+cp -r skills/iterative-refine ~/.claude/skills/
 ```
 
 ## Requirements
 
 - Node.js 18+ (zero npm dependencies — uses built-in `fetch`)
 - `ANTHROPIC_API_KEY` in your environment
-
-## Use inside Claude Code
-
-After installing, type `/iterative-refine` and describe your problem.
 
 ## Use from the terminal
 

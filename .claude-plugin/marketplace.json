@@ -1,0 +1,33 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "iterative-refine",
+  "description": "Iterative Contextual Refinement — a self-terminating multi-agent loop that forces radical reconceptualization rather than incremental polishing",
+  "owner": {
+    "name": "Iterative Studio (ported to Claude Code)"
+  },
+  "metadata": {
+    "description": "Run multi-agent Iterative Contextual Refinement on hard problems",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "iterative-refine",
+      "source": "./",
+      "description": "Iterative Contextual Refinement — a self-terminating multi-agent loop that forces radical reconceptualization rather than incremental polishing",
+      "version": "1.0.0",
+      "author": {
+        "name": "Iterative Studio (ported to Claude Code)"
+      },
+      "skills": [
+        "./skills/iterative-refine"
+      ],
+      "keywords": [
+        "refinement",
+        "multi-agent",
+        "problem-solving",
+        "architecture"
+      ],
+      "category": "development"
+    }
+  ]
+}
